@@ -20,7 +20,7 @@ function hidingPop ()
 }
 
 // adding and deviding money
-function mainFunc (id1,id2,id3)
+function mainFunc (id1,id2,id3,id4)
 {
  const inputValue = parseFloat(document.getElementById(id1).value);
 
@@ -53,4 +53,18 @@ function mainFunc (id1,id2,id3)
 
  const mainAccount = mainMoney - inputValue;
  document.getElementById(id3).innerText = mainAccount;
+ 
+ const dateTime = new Date();
+ const inputSpan = document.getElementById(id4).innerText
+ const historyHtml = document.createElement('div');
+ historyHtml.innerHTML =
+ `
+ <div class="border-2 px-10 py-5 rounded-lg max-w-[1100px] mx-5 md:mx-auto mt-4">
+   <h1 class="text-sm md:text-base">${inputValue} taka has been Donated ${inputSpan}.</h1> <br>
+   <h1 class="text-sm md:text-base"> ${dateTime}. </h1>
+ </div>
+`;
+
+  document.getElementById('history-section').appendChild(historyHtml);
+ 
 }

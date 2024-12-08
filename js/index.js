@@ -36,19 +36,19 @@ document.getElementById('donate-now3-btn').addEventListener('click', showingPop)
 
 document.getElementById('donate-now1-btn').addEventListener('click', function()
 {
-    mainFunc('noakhali-input','noakhali-total-money','main-acount');
+    mainFunc('noakhali-input','noakhali-total-money','main-acount','noakhali-span');
 })
 
 // feni
 document.getElementById('donate-now2-btn').addEventListener('click', function()
 {
-    mainFunc('feni-input','feni-total-money','main-acount');
+    mainFunc('feni-input','feni-total-money','main-acount','feni-span');
 })
 
 // injured
 document.getElementById('donate-now3-btn').addEventListener('click', function()
 {
-    mainFunc('injured-input','injured-total-money','main-acount');
+    mainFunc('injured-input','injured-total-money','main-acount','injured-span');
 })
 
 
