@@ -20,7 +20,7 @@ document.getElementById('donation-btn').addEventListener('click', function()
 // blog page to home page
 document.getElementById('blog-btn').addEventListener('click',function()
 {
-    window.location.href = 'https://jsrafi.github.io/assignment-5/blog.html'
+    window.location.assign("https://jsrafi.github.io/assignment-5/blog.html")
 })
 
 // showing popup modal for noakhali.
