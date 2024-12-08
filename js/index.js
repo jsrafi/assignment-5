@@ -32,4 +32,23 @@ document.getElementById('donate-now2-btn').addEventListener('click', showingPop)
 // showing popup modal for noakhali.
 document.getElementById('donate-now3-btn').addEventListener('click', showingPop);
 
+// adding & devididng money noakhali
+
+document.getElementById('donate-now1-btn').addEventListener('click', function()
+{
+    mainFunc('noakhali-input','noakhali-total-money','main-acount');
+})
+
+// feni
+document.getElementById('donate-now2-btn').addEventListener('click', function()
+{
+    mainFunc('feni-input','feni-total-money','main-acount');
+})
+
+// injured
+document.getElementById('donate-now3-btn').addEventListener('click', function()
+{
+    mainFunc('injured-input','injured-total-money','main-acount');
+})
+
 
