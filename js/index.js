@@ -23,4 +23,13 @@ document.getElementById('blog-btn').addEventListener('click',function()
     window.location.href = '/blog.html'
 })
 
+// showing popup modal for noakhali.
+document.getElementById('donate-now1-btn').addEventListener('click', showingPop);
+// hiding popup
+document.getElementById('popup-btn1').addEventListener('click', hidingPop);
+// showing popup modal for feni.
+document.getElementById('donate-now2-btn').addEventListener('click', showingPop);
+// showing popup modal for noakhali.
+document.getElementById('donate-now3-btn').addEventListener('click', showingPop);
+
 
