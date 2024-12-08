@@ -14,47 +14,70 @@
 
             <!-- home btn -->
             <div>
-                <button class="btn bg-[#B4F461] rounded-xl px-8 text-[20px] font-semibold">Home</button>
+                <button id="home-button" class="btn bg-[#B4F461] rounded-xl px-3 md:px-8 text-[16px] md:text-[20px] font-semibold">Home</button>
             </div>
             <div class="flex items-center space-x-3">
-                <img src="img/logo.png" alt="">
-                <h3 class="text-[20px] font-bold">Donate Bangladesh</h3>
+                <img class="hidden md:block" src="img/logo.png" alt="">
+                <h3 class="text-[14px] md:text-[20px] font-bold">Donate Bangladesh</h3>
             </div>
             <div class="flex items-center space-x-2">
-                <img src="img/coin.png" alt="">
+                <img class="w-5 md:w-full" src="img/coin.png" alt="">
                 <!-- changing amount -->
-                <p class="text-[20px]">5000</p>
-                <p class="text-[20px]">BDT</p>
+                <p class="text-[14px] md:text-[20px]">5000</p>
+                <p class="text-[14px] md:text-[20px]">BDT</p>
             </div>
         </nav>
     </header>
 
-    <main class="max-w-[1250px] mx-auto">
+    <main class="max-w-[1250px] mx-3 md:mx-auto">
 
-        <h1 class="text-5xl font-bold flex items-center mb-5">Important FAQ <img class="max-w-20" src="img/Animation - 1733620347620.gif" alt=""></h1>
+        <h1 class="text-3xl md:text-5xl font-bold flex items-center mb-5">Important FAQ <img class="max-w-20" src="img/Animation - 1733620347620.gif" alt=""></h1>
         <div class="join join-vertical w-full">
-            <div class="collapse collapse-arrow join-item border-base-300 border">
+            <div class="collapse collapse-arrow join-item border-base-300 border p-3">
               <input type="radio" name="my-accordion-4" checked="checked" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-title text-base md:text-xl font-medium">What is the Document Object Model (DOM)?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="text-xs md:text-base">The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage in a tree-like format, where each part of the webpage (such as elements, attributes, text, etc.) is represented as an object that can be manipulated using JavaScript.</p>
               </div>
             </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
+            <div class="collapse collapse-arrow join-item border-base-300 border p-3">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-title text-base md:text-xl font-medium">How do you select an element form the DOM?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="text-xs md:text-base">To select an element from the DOM (Document Object Model), you can use various JavaScript methods, like <span class="font-bold">1/document.getElementById() </span>"Selects an element based on its id attribute" <span class="font-bold">2/document.getElementsByClassName() </span> "Selects all elements with a specific class name" <span class="font-bold">3/document.querySelector()</span> "Selects the first element that matches a specified CSS selector" <span class="font-bold">4/document.querySelectorAll()</span> "Selects all elements that match a specified CSS selector" .</p>
               </div>
             </div>
-            <div class="collapse collapse-arrow join-item border-base-300 border">
+            <div class="collapse collapse-arrow join-item border-base-300 border p-3">
               <input type="radio" name="my-accordion-4" />
-              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-title text-base md:text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
               <div class="collapse-content">
-                <p>hello</p>
+                <p class="text-xs md:text-base">Event delegation is a technique in JavaScript where you attach a single event listener to a parent element instead of attaching separate event listeners to each individual child element. This is especially useful when you have many similar elements or dynamically added elements, as it allows you to handle events for multiple elements efficiently.
+                    <br>
+                    The usefulness of event delegation are its code efficient its good for handling dynamic elements and it also simplifies the code.
+                </p>
               </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border p-3">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-base md:text-xl font-medium">How do you manipulate an elements attributes & styles using the DOM?</div>
+            <div class="collapse-content">
+              <p class="text-xs md:text-base">You can manipulate an element's attributes and styles in the DOM (Document Object Model) using JavaScript. These operations allow you to dynamically modify how an element behaves or appears on the page.
+                  <br>
+                  <br>
+                  <span class="font-bold">1.</span>You can retrieve the value of an attribute using the <span class="font-bold">getAttribute()</span> method.
+                  <br>
+                  <span class="font-bold">2.</span>You can change or set the value of an attribute using the <span class="font-bold">setAttribute()</span>  method.
+                  <br>
+                  <span class="font-bold">3.</span>You can remove an attribute using the <span class="font-bold">removeAttribute()</span> () method.
+                  <br>
+                  <span class="font-bold">4.</span>You can set inline styles directly using the <span class="font-bold">style</span> property. Each CSS property is accessed through camelCase in JavaScript (e.g., backgroundColor instead of background-color).
+              </p>
             </div>
           </div>
     </main>
+
+
+    <script src="js/blog.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
